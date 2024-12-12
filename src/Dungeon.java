@@ -12,13 +12,13 @@ public class Dungeon {
     private createRoom()
     {
         roomType = arr[randomRoom];
-        if roomType = "battleRoom"
+        if (roomType = "battleRoom")
         {
-            System.out.println("This is a battle room.");
+            System.out.println("a battle room.");
         }
     }
 
-    public createDungeon(currentRooms)
+    public createDungeon(int currentRooms)
     {
         numberOfRooms = currentRooms;
         while (currentRooms != 0)
@@ -30,6 +30,6 @@ public class Dungeon {
 
     public String toString()
     {
-        return "Dungeon with " + numberOfRooms + " rooms.";
+        return "Dungeon with " + numberOfRooms + " rooms. The rooms are, " + createDungeon(4);
     }
 }
