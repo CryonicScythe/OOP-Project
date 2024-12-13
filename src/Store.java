@@ -5,6 +5,6 @@ public class Store {
 
     public String toString()
     {
-        return "Wallet: " + money + "/n Karma: " + karma;
+        return "Wallet: " + money + " Karma: " + karma;
     }
 }

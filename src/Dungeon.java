@@ -12,13 +12,21 @@ public class Dungeon {
     private createRoom()
     {
         roomType = arr[randomRoom];
-        if (roomType = arr[0])
+        if (roomType == arr[0])
         {
             System.out.println("a battle room.");
         }
+        if (roomType == arr[1])
+        {
+            System.out.println("a treasure room.");
+        }
+        if (roomType == arr[2])
+        {
+            System.out.println("a mystery room.");
+        }
     }
 
-    public createDungeon(int currentRooms)
+    public int createDungeon(int currentRooms)
     {
         numberOfRooms = currentRooms;
         while (currentRooms != 0)

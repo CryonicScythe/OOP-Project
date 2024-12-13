@@ -8,6 +8,6 @@ public class Fight {
 
     public String toString()
     {
-        return "Player health: " + playerHealth + "/n Player Level: " + playerLevel + "/n Exp gained: " + expGained + "/n Enemy health: " + enemyHealth + "/n Weapon dmg: " + weaponDamage;
+        return "Player health: " + playerHealth + " Player Level: " + playerLevel + " Exp gained: " + expGained + " Enemy health: " + enemyHealth + " Weapon dmg: " + weaponDamage;
     }
 }
