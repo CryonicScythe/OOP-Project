@@ -12,7 +12,7 @@ public class Dungeon {
     private createRoom()
     {
         roomType = arr[randomRoom];
-        if (roomType = "battleRoom")
+        if (roomType = arr[0])
         {
             System.out.println("a battle room.");
         }

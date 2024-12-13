@@ -5,6 +5,6 @@ public class Inventory {
 
     public String toString()
     {
-        return "e";
+        return "Inventory capacity: " + bagSize + "/n Number of items in inventory: " + currentItems;
     }
 }
