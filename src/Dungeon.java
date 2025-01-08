@@ -1,5 +1,5 @@
 import java.util.Random;
-public class Dungeon {
+public class Dungeon extends Store{
     
     private int numberOfRooms;
     private String roomType;
@@ -9,7 +9,7 @@ public class Dungeon {
     int randomRoom = r.nextInt(arr.length);
 
     
-    private createRoom()
+    private void createRoom()
     {
         roomType = arr[randomRoom];
         if (roomType == arr[0])
@@ -26,7 +26,7 @@ public class Dungeon {
         }
     }
 
-    public int createDungeon(int currentRooms)
+    public void createDungeon(int currentRooms)
     {
         numberOfRooms = currentRooms;
         while (currentRooms != 0)
@@ -36,8 +36,15 @@ public class Dungeon {
         }
     }
 
+    public void treasureRoom(){
+        System.out.println("You have entered a treasure room. You quickly stuff your wallets...");
+        money += 150;
+        System.out.println("You gained 150 coins.");
+        System.out.println("You have " + money + " coins.");
+    }
+
     public String toString()
     {
-        return "Dungeon with " + numberOfRooms + " rooms. The rooms are, " + createDungeon(4);
+        return "Creating a new dungeon with " + numberOfRooms + " rooms:";
     }
 }

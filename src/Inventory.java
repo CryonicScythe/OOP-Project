@@ -1,7 +1,11 @@
-public class Inventory {
+public class Inventory extends Dungeon {
     
-    private int currentItems;
+    private int currentItems = 0;
     private int bagSize;
+    
+    public void treasure(){
+        currentItems += 1;
+    }
 
     public String toString()
     {
